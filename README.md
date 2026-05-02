@@ -49,26 +49,62 @@ Real-time webcam inference pipeline.
 ### Step 7
 Dashboard integration and session analytics.
 
-## Initial Project Structure
+## Dataset Plan
+
+The AffectNet dataset will be stored locally in `data/raw/affectnet/`.
+
+A processed working subset will be stored in `data/processed/affectnet_subset/`.
+
+We will use these 8 emotion classes:
+
+- `neutral`
+- `happy`
+- `sad`
+- `surprise`
+- `fear`
+- `disgust`
+- `anger`
+- `contempt`
+
+To keep the first experiments manageable, we will start with a subset of about `1000` images per class.
+
+That subset will later be split into:
+
+- `70%` train
+- `15%` validation
+- `15%` test
+
+The dataset itself will not be uploaded to GitHub.
+
+Only small metadata files and preparation scripts should be tracked by Git.
+
+## Current Project Structure
 
 ```text
 affectnet-webcam-emotion/
 |
-├── data/
-│   └── README.md
-├── models/
-│   └── README.md
-├── notebooks/
-│   └── README.md
-├── outputs/
-│   └── README.md
-├── src/
-│   └── README.md
-├── README.md
-├── requirements.txt
-└── .gitignore
++-- data/
+|   +-- raw/
+|   |   +-- affectnet/
+|   |       +-- README.md
+|   +-- processed/
+|   |   +-- affectnet_subset/
+|   |       +-- README.md
+|   +-- README.md
++-- models/
+|   +-- README.md
++-- notebooks/
+|   +-- README.md
++-- outputs/
+|   +-- README.md
++-- src/
+|   +-- README.md
+|   +-- prepare_affectnet_subset.py
++-- README.md
++-- requirements.txt
++-- .gitignore
 ```
 
 ## Current Status
 
-Only the initial setup has been created in this step. No training, webcam, dashboard, or dataset-specific code has been added yet.
+The project now includes setup and dataset planning only. No model training, webcam inference, or dashboard implementation has been added yet.

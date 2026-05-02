@@ -1,11 +1,10 @@
 # data
 
-This folder is reserved for dataset-related files.
+This folder is reserved for dataset-related files and local dataset organization.
 
-Suggested future subfolders:
+Current dataset plan:
 
-- `raw/` for original dataset files
-- `interim/` for temporary preprocessing outputs
-- `processed/` for cleaned or split data
+- `raw/affectnet/` for the original local AffectNet files
+- `processed/affectnet_subset/` for a smaller prepared subset used in early experiments
 
-The AffectNet dataset is not included in this repository.
+The AffectNet dataset and processed image subsets are not included in this repository.

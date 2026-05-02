@@ -40,11 +40,24 @@ logs/
 .env.*
 
 # Dataset and large data artifacts
-data/raw/
+data/raw/*
+!data/raw/affectnet/
+data/raw/affectnet/*
+!data/raw/affectnet/README.md
 data/interim/
-data/processed/
+data/processed/*
+!data/processed/affectnet_subset/
+data/processed/affectnet_subset/*
+!data/processed/affectnet_subset/README.md
 data/external/
 datasets/
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tif
+*.tiff
+*.webp
 *.zip
 *.tar
 *.tar.gz
@@ -57,6 +70,7 @@ artifacts/
 *.pt
 *.pth
 *.ckpt
+*.bin
 *.onnx
 *.joblib
 *.pkl
