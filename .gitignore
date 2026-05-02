@@ -1,0 +1,74 @@
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Packaging and build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Logs
+logs/
+*.log
+
+# Local environment files
+.env
+.env.*
+
+# Dataset and large data artifacts
+data/raw/
+data/interim/
+data/processed/
+data/external/
+datasets/
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Model artifacts and checkpoints
+checkpoints/
+weights/
+artifacts/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.joblib
+*.pkl
+
+# Output artifacts
+outputs/runs/
+outputs/figures/
+outputs/reports/
+outputs/tmp/
+
+# PyTorch and experiment tooling
+wandb/
+mlruns/
+tensorboard/
+events.out.tfevents*
