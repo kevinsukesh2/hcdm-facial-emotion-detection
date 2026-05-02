@@ -1,6 +1,6 @@
-# processed/affectnet_subset
+# processed/fer2013_subset
 
-This folder is the planned local storage location for a smaller prepared AffectNet subset.
+This folder is the planned local storage location for a smaller prepared FER2013 subset.
 
 Planned use:
 

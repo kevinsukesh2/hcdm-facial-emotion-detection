@@ -41,14 +41,14 @@ logs/
 
 # Dataset and large data artifacts
 data/raw/*
-!data/raw/affectnet/
-data/raw/affectnet/*
-!data/raw/affectnet/README.md
+!data/raw/fer2013/
+data/raw/fer2013/*
+!data/raw/fer2013/README.md
 data/interim/
 data/processed/*
-!data/processed/affectnet_subset/
-data/processed/affectnet_subset/*
-!data/processed/affectnet_subset/README.md
+!data/processed/fer2013_subset/
+data/processed/fer2013_subset/*
+!data/processed/fer2013_subset/README.md
 data/external/
 datasets/
 *.jpg
