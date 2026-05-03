@@ -87,6 +87,19 @@ The processed dataset will later be created in `data/processed/fer2013_subset/`.
 
 Raw and processed image data must not be committed to GitHub.
 
+## Webcam Inference
+
+After training the tuned FER2013 model, you can run the simple webcam inference script:
+
+```powershell
+& ".\.venv\Scripts\Activate.ps1"
+python src/webcam_inference.py
+```
+
+The script loads `models/resnet18_fer2013_tuned.pth`, opens the laptop webcam, detects faces, predicts one of the 7 FER2013 emotion classes, and shows the predicted emotion with confidence on screen.
+
+Press `q` to quit the webcam window.
+
 ## Current Project Structure
 
 ```text
@@ -116,4 +129,4 @@ fer2013-webcam-emotion/
 
 ## Current Status
 
-The project now includes setup and FER2013 dataset planning only. No model training, webcam inference, or dashboard implementation has been added yet.
+The project now includes dataset preparation, training notebooks, and a simple webcam inference script. The full dashboard is not implemented yet.
